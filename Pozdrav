@@ -1,0 +1,14 @@
+using System;
+ 
+	class Test
+	{
+		public static void Main(string[] args)
+		{
+			string userInput;
+			ConsoleKeyInfo keyInfo = new ConsoleKeyInfo();
+			
+			Console.WriteLine("Type your name...");
+            userInput = Console.ReadLine();
+            Console.WriteLine("Hello " + userInput);
+		}
+	}
