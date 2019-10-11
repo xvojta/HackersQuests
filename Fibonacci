@@ -1,0 +1,31 @@
+using System;
+using System.Collections;
+
+class Test
+{
+  public static ArrayList generateFibonacci(int toGenerate)
+  {
+      ArrayList fibonacci = new ArrayList();
+      fibonacci.Add(0);
+      fibonacci.Add(1);
+      while (fibonacci.Count < toGenerate)
+      {
+          fibonacci.Add((int)fibonacci[fibonacci.Count-1] + (int)fibonacci[fibonacci.Count-2]);
+      }
+      return fibonacci;
+  }
+
+
+  public static void Main()
+  {
+    string userInput;
+
+    string userInput1 = Console.ReadLine();
+    string userInput2 = Console.ReadLine();
+    ArrayList list = generateFibonacci(Convert.ToInt32(userInput2));
+    for(int i = Convert.ToInt32(userInput1)-1; i < list.Count;)
+    {
+        Console.WriteLine(i);
+    }
+  }
+}
