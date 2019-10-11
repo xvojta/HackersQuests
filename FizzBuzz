@@ -1,0 +1,18 @@
+public class Program
+{
+	
+	public void Main()
+    {
+		for(int a = 1; a<=100; a++) {
+			if (a % 3 == 0 && a % 5 == 0) {
+				Console.WriteLine("FizzBuzz");
+			} 	else if (a % 5 == 0) {
+				Console.WriteLine("Buzz");
+			} 	else if (a % 3 == 0 && a % 5 == 0) {
+				Console.WriteLine("Fizz");
+			} else {
+				Console.WriteLine(a);	
+			}
+		}
+	}
+}
