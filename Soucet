@@ -1,0 +1,14 @@
+using System;
+using System.Collections;
+
+class Test
+{
+      public static void Main()
+      {
+          string userInput;
+
+          userInput = Console.ReadLine();
+          double n = ((Convert.ToDouble(userInput)+1)/2)*Convert.ToDouble(userInput);
+          Console.WriteLine(n);
+      }
+}
